@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "pptx-printer"
+version = "0.1.0"
+description = ""
+authors = ["Clyde Ancheta <clyde.a.p.ancheta@accenture.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pywin32 = "^309"
+tqdm = "^4.67.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
