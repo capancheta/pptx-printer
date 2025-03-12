@@ -20,6 +20,14 @@ poetry install
 
 ### Run
 
+Commandline:
+
 ```bash
 poetry run python pptx-printer.py <source-folder> [<target-folder>]
+```
+
+gui mode:
+
+```bash
+poetry run python pptx-printer.py
 ```
