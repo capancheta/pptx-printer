@@ -62,11 +62,11 @@ def commandline():
     output_folder = input_folder if not args.output else path.abspath(args.output)
 
     if not path.exists(input_folder):
-        print(f"folder {input_folder} not found")
+        print(f"Input folder '{input_folder}' not found")
         sys.exit(0)
 
     if not path.exists(output_folder):
-        print(f"creating folder {output_folder}")
+        print(f"Creating output folder '{output_folder}'")
         makedirs(output_folder)
 
     convert(input_folder, output_folder)
