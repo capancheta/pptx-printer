@@ -1,5 +1,7 @@
 # Mass PPTX PDF Print
 
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)![Poetry](https://img.shields.io/badge/Poetry-%233B82F6.svg?style=for-the-badge&logo=poetry&logoColor=0B3D8D)![Windows](https://img.shields.io/badge/Windows-0078D6.svg?style=for-the-badge&logo=windows&logoColor=white)![Microsoft PowerPoint](https://img.shields.io/badge/Microsoft_PowerPoint-B7472A.svg?style=for-the-badge&logo=microsoft-powerpoint&logoColor=white)
+
 ### Requirements
 
 MS Windows, MS Powerpoint (Office)
@@ -20,6 +22,14 @@ poetry install
 
 ### Run
 
+Commandline:
+
 ```bash
 poetry run python pptx-printer.py <source-folder> [<target-folder>]
+```
+
+gui mode:
+
+```bash
+poetry run python pptx-printer.py
 ```

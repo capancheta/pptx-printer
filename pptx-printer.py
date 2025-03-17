@@ -4,11 +4,10 @@ import argparse
 from os import path, makedirs
 from pathlib import Path
 from textwrap import dedent
-from tqdm.auto import tqdm
 from tkinter import filedialog, Button, Tk, Label, StringVar
 from tkinter.messagebox import showinfo
 
-
+from tqdm.auto import tqdm
 from win32com import client
 
 
@@ -34,7 +33,6 @@ def convert(input_folder, output_folder):
 
 
 def commandline():
-
     description = dedent(
         """
     Microsoft Powerpoint required.
@@ -79,20 +77,20 @@ def commandline():
 def gui():
     root = Tk()
     root.attributes("-topmost", True)
-    root.eval('tk::PlaceWindow . center')
+    root.eval("tk::PlaceWindow . center")
 
     input_folder = StringVar()
     output_folder = StringVar()
 
-    input_label = Label(root,  textvariable=input_folder)
-    output_label = Label(root,  textvariable=output_folder)
+    input_label = Label(root, textvariable=input_folder)
+    output_label = Label(root, textvariable=output_folder)
 
     def go_convert():
         input = input_folder.get()
         output = output_folder.get() or input
 
         convert(input, output)
-        showinfo(message='Conversion complete.')
+        showinfo(message="Conversion complete.")
 
     go = Button(root, text="Go", command=go_convert)
 
